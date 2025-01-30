@@ -86,17 +86,28 @@ body {
 
 .stock-info {
   flex-grow: 1;
+  display: flex;
+  align-items: center;
 }
 
-.stock-info h2 {
+.stock-name-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.stock-name {
   font-size: 1.2rem;
   color: #333;
-  margin-bottom: 5px;
+  margin-right: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .stock-symbol {
   color: #666;
   font-size: 0.9rem;
+  white-space: nowrap;
 }
 
 .stock-details {
